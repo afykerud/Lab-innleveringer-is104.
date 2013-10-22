@@ -1,3 +1,39 @@
+/*
+	Setter margen (margin) og utfylling (padding) til 0, siden det er vanlig med
+	et satt verdi i nettleseren for dette
+*/
+body{
+	margin:0;
+	padding:0;
+}
+
+#body-container{
+	width: 415px; /* Setter bredden konstant til 415px for body-container div */
+	height: 500px; /* Setter bredden konstant til 500px for body-container div */
+	margin: 0 auto; /* Dette vil sette div til senter */
+	border: 1px solid #3285ef; /* Setter enr ramme rundt body-container div */
+}
+
+#body-container .glossary-container {
+	clear: both; /* Dette vil ikke tillate noen elementer som flyter på noen av sidene */
+}
+
+#body-container .content-container{
+	height: 430px; /* setter høyden konstant til 430px for content-container klassen */
+	width: 415px; /* setter høyden konstant til 415px for content-container klassen */
+	overflow: auto; /* Et rullefelt vises når innholdet er større enn den spesifiserte høyden */
+	font-family: 'Arial', Verdana,Tahoma; /* tar standardfonten 'Arial' */
+	font-size: 10pt; /* Setter fontstørrelse til 10 punkter */
+	clear: both; /* Dette vil ikke tillate noen elementer som flyter på noen av sidene */
+}
+
+/* Definerer egenskaper for alle div objekter som ligger innen body-container elementet og tilhører klassen content-container */
+#body-container .content-container div{
+	padding-left: 10px; /* Utfylling (padding settes til 10px */
+	border-bottom: 1px #666666 solid; /* for adskille hver gruppe given fargen til nedre rammeside som #666666 (gray) med 1px */
+	}
+	
+/*Siden listingen skal rulles, nær det vre en mulighet å komme fort tilbake til toppen */
 #body-container .content-container p.return-to-top{
 	color: #0066ff; /* Gir tekstfarge til "Tilbake til toppen" tekst */
 	text-decoration: underline; /* Teksten skal understrekes */
